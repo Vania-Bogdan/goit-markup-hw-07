@@ -1,5 +1,15 @@
-@import "./header";
-@import "./hero";
-@import "./skills";
-@import "./tasks";
-@import "./team";
+@import "./utils/variables";
+
+@import "./components/header";
+@import "./components/footer";
+
+@import "./components/hero";
+@import "./components/skills";
+@import "./components/tasks";
+@import "./components/team";
+@import "./components/clients";
+
+@import "./components/modal";
+
+@import "./components/portbuttons";
+@import "./components/portcards";
