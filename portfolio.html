@@ -10,7 +10,7 @@
         integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
         crossorigin="anonymous" 
         referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="stylesheet" href="./css/main.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
@@ -39,31 +39,31 @@
     
 </head>
 <body>
-    <header class="header-block">
-        <div class="container header-container">
-            <a class="link header-logo" href="./index.html">Web<span style="color:#000000;">Studio</span></a>
-            <nav class="header-nav">
-                <ul class="list header-list">
-                    <li class="header-item"><a class="link header-link" href="./index.html">Студия</a></li>
-                    <li class="header-item"><a class="link header-link current" href="./portfolio.html">Портфолио</a></li>
-                    <li class="header-item"><a class="link header-link" href="">Контакты</a></li>
+    <header class="header">
+        <div class="container header__container">
+            <a class="link header__logo logo" href="./index.html">Web<span style="color:#000000;">Studio</span></a>
+            <nav class="site-nav">
+                <ul class="list site-list">
+                    <li class="site-list__item"><a class="link site-list__link" href="./index.html">Студия</a></li>
+                    <li class="site-list__item"><a class="link site-list__link current" href="./portfolio.html">Портфолио</a></li>
+                    <li class="site-list__item"><a class="link site-list__link" href="">Контакты</a></li>
                 </ul>
             </nav>
             <div class="header-contacts">
-                <a class="link header-mail" href="mailto:info@devstudio.com">
-                    <svg class="mail-icon" width="16" height="12">
+                <a class="link header-mail header-contacts__item" href="mailto:info@devstudio.com">
+                    <svg class="header-mail__icon" width="16" height="12">
                         <use href="./images/icons.svg#icon-mail-icon"></use>
                     </svg>info@devstudio.com
                 </a>
-                <a class="link header-tel" href="tel:+380961111111">
-                    <svg class="phone-icon" width="10" height="16">
+                <a class="link header-tel header-contacts__item" href="tel:+380961111111">
+                    <svg class="header-tel__icon" width="10" height="16">
                         <use href="./images/icons.svg#icon-phone-icon"></use>
                     </svg>+38 096 111 11 11
                 </a>
             </div>
         </div>
     </header>
-    <main class="main-block-portfolio">
+    <main>
         <section class="portfolio-content">
             <div class="container">
                 <ul class="list buttons-list">
@@ -179,24 +179,24 @@
             </div>
             <div class="foot-container2">
                 <h3 class="foot-bl2-title">присоединяйтесь</h3>
-                <ul class="worker-social-list foot-icon-list list">
-                    <li class="worker-social-item foot-icon-item"><a href="" class="worker-social-link foot-icon-link">
-                            <svg class="worker-social-icon foot-icon" width="20" height="20">
+                <ul class="foot-icon-list list">
+                    <li class="foot-icon-item"><a href="" class="foot-icon-link">
+                            <svg class="foot-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-worker-instagram"></use>
                             </svg>
                         </a></li>
-                    <li class="worker-social-item foot-icon-item"><a href="" class="worker-social-link foot-icon-link">
-                            <svg class="worker-social-icon foot-icon" width="20" height="20">
+                    <li class="foot-icon-item"><a href="" class="foot-icon-link">
+                            <svg class="foot-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-worker-twitter"></use>
                             </svg>
                         </a></li>
-                    <li class="worker-social-item foot-icon-item"><a href="" class="worker-social-link foot-icon-link">
-                            <svg class="worker-social-icon foot-icon" width="20" height="20">
+                    <li class="foot-icon-item"><a href="" class="foot-icon-link">
+                            <svg class="foot-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-worker-facebook"></use>
                             </svg>
                         </a></li>
-                    <li class="worker-social-item foot-icon-item"><a href="" class="worker-social-link foot-icon-link">
-                            <svg class="worker-social-icon foot-icon" width="20" height="20">
+                    <li class="foot-icon-item"><a href="" class="foot-icon-link">
+                            <svg class="foot-icon" width="20" height="20">
                                 <use href="./images/icons.svg#icon-worker-linkedin"></use>
                             </svg>
                         </a></li>
@@ -206,7 +206,8 @@
                 <form action="#" name="subscribing_form" class="foot-form">
                     <label for="subscriber-email" class="foot-form-label">Подпишитесь на рассылку</label>
                     <div class="foot-form-wrap">
-                        <input type="email" class="foot-form-input" id="subscriber-email" name="subscriber-email" placeholder="E-mail" required>
+                        <input type="email" class="foot-form-input" id="subscriber-email" name="subscriber-email"
+                            placeholder="E-mail" required>
                         <button type="submit" class="foot-form-btn">
                             <span class="foot-form-btn-text">Подписаться</span>
                             <svg class="icon icon-send">
