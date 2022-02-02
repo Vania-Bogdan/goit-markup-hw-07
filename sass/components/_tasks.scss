@@ -2,7 +2,7 @@
   padding-bottom: 94px;
 }
 
-.tasks-title {
+.tasks__title {
   font-weight: bold;
   font-size: 36px;
   line-height: 1.17;
@@ -17,11 +17,11 @@
   justify-content: space-between;
 }
 
-.tasks-item {
+.tasks-list__item {
   position: relative;
 }
 
-.task-name {
+.tasks-list__text {
   position: absolute;
   font-weight: bold;
   font-size: 14px;
